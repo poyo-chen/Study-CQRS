@@ -1,6 +1,6 @@
-package com.martinez.CQRSSample.gateway;
+package com.martinez.CQRSSample.gateway.entity;
 
-import com.martinez.CQRSSample.gateway.Enrollment.Grade;
+import com.martinez.CQRSSample.gateway.entity.Enrollment.Grade;
 import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.Entity;
@@ -18,6 +18,7 @@ public class Student {
   @Id
   @GeneratedValue
   private long id;
+
   private String name;
   private String email;
   @OneToMany(targetEntity = Enrollment.class)
@@ -25,6 +26,11 @@ public class Student {
   @OneToMany(targetEntity = Disenrollment.class)
   private List<Disenrollment> disenrollments = new ArrayList<>();
 
+
+  public Student(String name, String email) {
+    this.name = name;
+    this.email = email;
+  }
   private Enrollment getEnrollment(int index) {
     if (enrollments.size() > index) {
       return enrollments.get(index);

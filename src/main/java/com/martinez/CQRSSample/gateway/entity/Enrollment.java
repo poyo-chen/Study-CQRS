@@ -1,4 +1,4 @@
-package com.martinez.CQRSSample.gateway;
+package com.martinez.CQRSSample.gateway.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -36,6 +36,7 @@ public class Enrollment {
 
   @Getter
   @RequiredArgsConstructor
+  public
   enum Grade {
     A(1), B(2), C(3), D(4), E(5), F(6);
     private final int value;

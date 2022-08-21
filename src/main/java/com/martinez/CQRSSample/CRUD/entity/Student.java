@@ -1,6 +1,6 @@
-package com.martinez.CQRSSample.gateway.entity;
+package com.martinez.CQRSSample.CRUD.entity;
 
-import com.martinez.CQRSSample.gateway.entity.Enrollment.Grade;
+import com.martinez.CQRSSample.CRUD.entity.Enrollment.Grade;
 import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.Entity;
@@ -48,6 +48,7 @@ public class Student {
     disenrollments.add(disenrollment);
   }
 
+  //加選
   public void enroll(Course course, Grade grade) throws Exception {
     if (enrollments.size() > 2) {
       throw new Exception("Cannot have more than 2 enrollments");

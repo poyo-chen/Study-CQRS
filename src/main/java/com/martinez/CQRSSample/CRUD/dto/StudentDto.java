@@ -1,6 +1,5 @@
-package com.martinez.CQRSSample.gateway.dto;
+package com.martinez.CQRSSample.CRUD.dto;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 

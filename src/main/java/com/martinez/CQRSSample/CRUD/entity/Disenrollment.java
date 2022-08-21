@@ -1,4 +1,4 @@
-package com.martinez.CQRSSample.gateway.entity;
+package com.martinez.CQRSSample.CRUD.entity;
 
 import java.util.Date;
 import javax.persistence.Entity;
